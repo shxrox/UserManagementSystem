@@ -17,8 +17,4 @@ public class JWTUtils {
         byte[] keyBytes = Base64.getDecoder().decode(secreteString.getBytes(StandardCharsets.UTF_8));
         this.Key = new SecretKeySpec(keyBytes, "HmacSHA256");
     }
-
-
-    
-
 }
